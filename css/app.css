@@ -6,8 +6,7 @@ body {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -37,8 +36,6 @@ body {
 
 .text-intro-wrapper {
   height: 120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 5rem;
 }
@@ -50,17 +47,7 @@ body {
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
-  -webkit-animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
-          animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-
-@-webkit-keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -69,14 +56,6 @@ body {
   }
   to {
     width: 100%;
-  }
-}
-@-webkit-keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: white;
   }
 }
 @keyframes blink-caret {
@@ -97,3 +76,10 @@ body {
   right: 0;
   z-index: 99;
 }
+
+.test {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+}/*# sourceMappingURL=app.css.map */
