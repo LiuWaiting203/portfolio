@@ -1,0 +1,99 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: black;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.bg-section1-img {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/assests/bg-section1-img1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 61px;
+}
+
+.bg-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/assests/mask.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 61px;
+}
+
+.text-intro-wrapper {
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5rem;
+}
+
+.typewriter h1 {
+  color: #fff;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  -webkit-animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+          animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+.bg-black-section {
+  background-color: #2a2929;
+}
+
+.live2d-pos {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+}

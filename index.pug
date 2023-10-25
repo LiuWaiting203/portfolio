@@ -1,0 +1,59 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer")
+    link(rel="stylesheet", href="./css/app.css")
+    link(href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet")
+    title MachikadoAme | Liu Waiting 劉威廷
+  body
+    #app
+      nav.fixed-top.bg-scroll-fade.navbar-expand-lg.navbar
+        .container-fluid  
+          a.fw-bold.fs-4.text-white.navbar-brand(href="#") MachikadoAme
+          button.bg-opacity-50.bg-light.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse")
+            span.navbar-toggler-icon
+          .collapse.navbar-collapse.justify-content-end#navCollapse
+            .navbar-nav
+              a.text-white.nav-link(href="#") About
+              a.text-white.nav-link(href="#") Project
+              a.text-white.nav-link(href="#") Contact
+      .bg-section1-img
+      .bg-mask
+        .row.w-100.g-0
+          .col-6
+            .text-intro-wrapper 
+              .typewriter.ms-2 
+                h1.text-white Welcome to my page
+          .col-12
+            .d-flex.justify-content-center.align-center.flex-column
+              h6.text-white.text-center My name is
+              br
+              h1.text-white.text-center.fs-bold 劉威廷
+              h2.text-white.text-center.fs-bold Liu Waiting
+          .col-12 
+            .d-flex.justify-content-center.align-center.flex-column
+              h6.mt-3.text-white.text-center.fs-bold A junior front-end engineer, who also interest to Anime / Manga and Software languages
+      .container-fluid
+        .row 
+          .col-12
+            .bg-black
+              p text 
+              p text 
+              p text 
+              p text 
+              p text 
+              p text 
+              p text 
+              p text 
+      canvas#live2d.live2d.live2d-pos(width="220" height="300" style="position: fixed;bottom: 0;right: 0;z-index: 99")
+      
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.4/vue.global.min.js" integrity="sha512-Wbf9QOX8TxnLykSrNGmAc5mDntbpyXjOw9zgnKql3DgQ7Iyr5TCSPWpvpwDuo+jikYoSNMD9tRRH854VfPpL9A==" crossorigin="anonymous" referrerpolicy="no-referrer")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js")
+    script(src="js/live2d.js")
+    script(src="js/app.js")
