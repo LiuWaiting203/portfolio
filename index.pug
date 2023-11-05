@@ -16,7 +16,7 @@ html(lang="en")
             span.navbar-toggler-icon
           .collapse.navbar-collapse.justify-content-end#navCollapse
             .navbar-nav
-              a.text-white.nav-link(href="#") About
+              a.text-white.nav-link(href="#about") About
               a.text-white.nav-link(href="#") Project
               a.text-white.nav-link(href="#") Contact
       .bg-section1-img
@@ -35,18 +35,18 @@ html(lang="en")
           .col-12 
             .d-flex.justify-content-center.align-center.flex-column
               h6.mt-3.text-white.text-center.fs-bold A junior front-end engineer, who also interest to Anime / Manga and Software languages
-      .container-fluid
-        .row 
+      .container
+        .row.p-5
           .col-12
             .bg-black
-              p text 測試
-              p text 測試
-              p text 
-              p text 
-              p text 
-              p text 
-              p text 
-              p text 
+          .col-md-6.d-flex.justify-content-start
+            img(src="./assests/profile-picture.jpg" style="width:500px" class="rounded")
+          .col-md-6
+            h1.text-white.overflow-hidden.mb-5(id="about") About me
+            p.mt-5.text-white.fs-5 因為對前端網頁技術有感興趣，所以於泰山職訓所前端網頁技術班學習前端技術，並在同年結訓。在前端網頁技術方面，我熟悉 HTML、CSS、JavaScript、JQuary、Vue.js 等技術，並且有一定的實務經驗。我喜歡透過前端網頁技術來創造出美觀、易用的網站。
+            p.mt-5.text-white.fs-5 在後端網路工程方面，我對 Node.js、Express 和 MongoDB 等語言有基礎的了解，並且有一定的資料庫概念。我希望能夠學習更多更先進的後端網路工程技術，精進自己的專業能力。我熱愛學習新事物，並且不斷挑戰自我。我相信透過努力，我能夠成為一名優秀的網頁設計師和工程師。
+      .d-flex.justify-content-center.align-center
+        hr.px-5
       canvas#live2d.live2d.live2d-pos(width="220" height="300" style="position: fixed;bottom: 0;right: 0;z-index: 99")
       
     script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.4/vue.global.min.js" integrity="sha512-Wbf9QOX8TxnLykSrNGmAc5mDntbpyXjOw9zgnKql3DgQ7Iyr5TCSPWpvpwDuo+jikYoSNMD9tRRH854VfPpL9A==" crossorigin="anonymous" referrerpolicy="no-referrer")

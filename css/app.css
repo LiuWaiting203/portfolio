@@ -13,6 +13,12 @@ body {
   overflow-x: hidden;
 }
 
+hr {
+  border-width: 2px;
+  width: 50%;
+  color: white;
+}
+
 .bg-section1-img {
   width: 100vw;
   height: 100vh;
