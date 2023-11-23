@@ -20,7 +20,7 @@ html(lang="en")
               a.text-white.nav-link(href="#about") About
               a.text-white.nav-link(href="#pro") Professional
               a.text-white.nav-link(href="#project") Projects
-              a.text-white.nav-link(href="#") Contact
+              //- a.text-white.nav-link(href="#") Contact
       .bg-section1-img
       .bg-mask
         .row.w-100.g-0
@@ -87,10 +87,47 @@ html(lang="en")
       .container 
         .row.p-5
           .col-12 
-            h1.mb-5.text-white.overflow-hidden.text-center#project Projects
+            h1.mb-5.text-white.overflow-hidden.text-center.me-5#project Projects
           .col-md-6 
-            .card
-            
+            .card(style="width: 500px;")
+              img.card-img-top(src="./assests/card-1.jpg" style="object-fit: cover; height: 300px;")
+              .card-body.text-center(style="overflow-y: hidden")
+                a.card-title.fs-3.text-primary(href="https://github.com/LiuWaiting203/icomicbuy-front") 買動漫
+                p.card-text.my-2 使用 Vue 3 及 Vuetify 完成的網頁，其中的功能包含【註冊】、【登入】、【加入購物車】、【結帳】及【查看訂單】等…。
+          .col-md-6 
+            .card(style="width: 500px;")
+              img.card-img-top(src="./assests/card-2.jpg" style="object-fit: cover;")
+              .card-body.text-center(style="overflow-y: hidden")
+                a.card-title.fs-3.text-primary(href="https://github.com/LiuWaiting203/pomodoro") 番茄鐘
+                p.card-text.my-2 使用 Vue 3 及 Vuetify 所做的練習網頁，可以記錄事項，並且可用來計時，時間跑完後會有網頁提醒視窗提示計時已結束。設定選項裡有包含背景切換及是否關閉提醒等。
+          .col-md-6 
+            .card.my-5(style="width: 500px;")
+              img.card-img-top(src="./assests/card-3.jpg" style="object-fit: cover;")
+              .card-body.text-center(style="overflow-y: hidden")
+                a.card-title.fs-3.text-primary(href="#projects") 時鐘
+                p.card-text.my-2 運用 JavaScript 及 JQuery，加上所學的 CSS 效果，所做的網頁時鐘，以及小的容量和優美的畫面給予舒適的視覺感受。
+          .col-md-6 
+            .card.my-5(style="width: 500px;")
+              img.card-img-top(src="./assests/card-4.jpg" style="object-fit: cover;")
+              .card-body.text-center(style="overflow-y: hidden")
+                a.card-title.fs-3.text-primary(href="#projects") DUCK HUNT
+                p.card-text.my-2 活用 JavaScript 和 JQuery 所做的小遊戲，使用 LocalStorage 紀錄分數，並可以分辨目前得分最高的使用者。
+          .col-md-6 
+            .card.my-5(style="width: 500px;")
+              img.card-img-top(src="./assests/card-5.jpg" style="object-fit: cover;")
+              .card-body.text-center(style="overflow-y: hidden")
+                a.card-title.fs-3.text-primary(href="https://github.com/LiuWaiting203/LineBot-WalkingTrails") LINEBOT - 健康步道查詢 Bot
+                p.card-text.my-2 使用 Express 和 MongoDB 及 Node.js 所做的 LineBot，使用 RestAPI 串接政府公開資料 API，可即時更新內容。
+      .container 
+        .row.p-5 
+          .col-12.text-center
+            a.text-primary(href="https://github.com/LiuWaiting203/") Link to my Github
+            p.text-white @2023 Liu Waiting
+      //- .d-flex.justify-content-center.align-center
+      //-   hr.px-5
+      //- .contanier
+      //-   .row.p-5
+      //-     h1.mb-5.text-white.overflow-hidden.text-center.me-5#contact Projects
       canvas#live2d.live2d.live2d-pos(width="220" height="300" style="position: fixed;bottom: 0;right: 0;z-index: 99")
       
     script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.4/vue.global.min.js" integrity="sha512-Wbf9QOX8TxnLykSrNGmAc5mDntbpyXjOw9zgnKql3DgQ7Iyr5TCSPWpvpwDuo+jikYoSNMD9tRRH854VfPpL9A==" crossorigin="anonymous" referrerpolicy="no-referrer")
