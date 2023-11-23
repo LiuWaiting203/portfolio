@@ -39,7 +39,7 @@ hr {
 .bg-section1-img {
   width: 100vw;
   height: 100vh;
-  background-image: url("/assests/bg-section1-img1.jpg");
+  background-image: url("assests/bg-section1-img1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 61px;
@@ -51,7 +51,7 @@ hr {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url("/assests/mask.png");
+  background-image: url("assests/mask.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 61px;
