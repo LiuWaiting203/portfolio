@@ -114,4 +114,68 @@ hr {
 
 .fa-icons::before {
   content: "";
+}
+
+.fa-colors {
+  color: #fff;
+}
+
+.card-style {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.card-img-fit {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 25rem;
+  border: 6px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/*base code*/
+.animated {
+  --webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  --webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  --webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  --webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+/*the animation definition*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  --webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+#aplayer {
+  overflow-y: hidden;
+}
+
+.aplayer-body {
+  overflow: hidden !important;
+}
+
+.aplayer .aplayer-info {
+  overflow-y: hidden !important;
 }/*# sourceMappingURL=app.css.map */
